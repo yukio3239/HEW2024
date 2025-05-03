@@ -1,0 +1,212 @@
+@charset "utf-8";
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+ul, li{
+    list-style: none;
+    color: #ffffff;
+  }
+a{
+    text-decoration: none;
+}
+#header{
+    height: 10%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.428);
+    position: fixed;
+    top: -100px; /* initially hide the header above the viewport */
+    width: 80vw;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    transition: top 0.3s; /* smooth transition effect */
+  }
+  .logo{
+    opacity: 90%;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    width: 10vw;
+  }
+  .navigation{
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    min-width: 50vw;
+    text-align: center;
+  }
+  .gnavi{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .gnavi li a{
+    display: block;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .gnavi li.current a,
+  .gnavi li a:hover{
+  color:#ff0000;
+  }
+  
+  .gnavi li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#ff0000;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+  }
+
+  .gnavi li.current a::after,
+  .gnavi li a:hover::after {
+    transform: scale(1, 1);
+  }
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.choice-btn{
+    flex: 0 1 20vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.choice-btn li{
+  width: 100%;
+  height: calc(100vh / 5);
+  position: relative;
+}
+.choice-btn li img{
+  width: 100%;
+  height: calc(100vh / 5);
+  /* aspect-ratio: 16/8; */
+  object-fit: cover;
+}
+.choice-btn li dt{
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  margin-left: 2%;
+}
+
+.gallery{
+    position: sticky;
+    width: 80vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.gallery li{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+.gallery li img.background_image{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(3px) brightness(0.8);
+
+}
+.gallery li img.inner_image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+}
+.gallery li dl{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    backdrop-filter: blur(15px);
+    left: 5%;
+    width: 50%;
+    padding: 3% 1%;
+    border-radius: 15px;
+    border: solid 1px #ffffff62;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gallery li dt{
+    width: 80%;
+    margin-inline-start: 40px;
+    margin: 0 auto 3% auto;
+    font-weight: bold;
+    font-size: x-large;
+}
+.gallery li dd{
+    width: 80%;
+    margin: 0 auto 8% auto;
+    line-height: 1.6;
+}
+
+.slick-prev, 
+.slick-next {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  height: 25px;
+  width: 25px;
+}
+
+.slick-prev {
+    top: 4%;
+    right: 50%;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    bottom: 4%;
+    right: 50%;
+    transform: rotate(135deg);
+}
+
+.choice-btn li{
+	cursor: pointer;
+	outline: none;
+	background:#333;
+list-style:none;
+}
+
+.choice-btn li img{
+	opacity: 0.2;
+}
+
+.choice-btn li.slick-current img{
+	opacity: 1;
+}

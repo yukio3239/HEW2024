@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/other_page_css/movie_contents.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <title>MCU</title>
+    </head>
+    <body>
+
+        <a id="prev_page" href="" class="dli-chevron-round-left"></a>
+        
+        
+        <main id="wrapper">
+            
+            <div id="fixed-area">
+                <div class="movie_image">
+                    <img id="main_image" src="" alt="">
+                </div>
+            </div><!--左固定エリア-->
+            <div id="container">
+
+                <div id="title">
+                   <img id="title_image" src="" alt="">
+                </div>
+
+                <div class="container_wrapper">
+                
+                    <article class="about">
+                        <h2 class="article_title">作品詳細</h2>
+                        <hr>
+                        <p id="about_text"></p>
+
+                    </article>
+                    <article class="data">
+                        <div class="data_container">
+                            <div class="label">監督</div>
+                            <div id="director" class="copy"></div>
+                        </div>
+                        <div class="data_container">
+                            <div class="label">脚本</div>
+                            <div id="script"></div>
+                        </div>
+                        <div class="data_container">
+                            <div class="label">公開（日本）</div>
+                            <div id="release" class="copy"></div>
+                        </div>
+                        <div class="data_container">
+                            <div class="label">上映時間</div>
+                            <div id="time" class="copy"></div>
+                        </div>
+                        <div class="data_container">
+                            <div id="next"></div>
+                        </div>
+                    </article>
+
+                </div>
+            </div><!--右エリア-->
+            
+            
+        </main>
+        <a id="next_page" href="" class="dli-chevron-round-right"></a>
+        <a href="movie.html" class="dli-close"></a>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--自作のJS-->
+        <script src="JavaScript/script.js"></script>
+        <script src="JavaScript/movie_temp.js"></script>
+        <script src="JavaScript/movie_temp_into.js"></script>
+    </body>

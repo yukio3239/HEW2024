@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/other_page_css/movie_phase.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Noto+Sans+JP:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title>MCU</title>
+</head>
+
+<body>
+
+    <a id="prev_page" href="" class="dli-chevron-round-left"></a>
+
+
+    <main id="wrapper">
+
+        <div id="fixed-area">
+            <div class="phase">
+                <h1 id="phase_num">phase1</h1>
+            </div>
+        </div><!--左固定エリア-->
+
+
+        <div id="container">
+            <div class="container_wrapper">
+                <section class="data_list">
+                    <ul>
+                        <li>
+                            <div class="data_label">期間</div>
+                            <div class="data">
+                                <p id="span"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="data_label">主な出来事</div>
+                            <div id="event" class="data"></div>
+
+                        </li>
+                        <li>
+                            <div class="data_label">新登場キャラクター</div>
+                            <div id="char" class="data"></div>
+                        </li>
+                        <li>
+                            <div class="data_label">公開された作品</div>
+                            <div id="movie" class="movie_contents"></div>
+                        </li>
+                    </ul>
+
+                </section>
+
+            </div>
+        </div><!--右エリア-->
+
+    </main>
+    <a id="next_page" href="" class="dli-chevron-round-right"></a>
+    <a href="movie.html" class="dli-close"></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/phase_temp.js"></script>
+    <script src="JavaScript/phase_temp_into.js"></script>
+</body>
